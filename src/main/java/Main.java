@@ -12,8 +12,6 @@ public class Main {
             firstTeamScore += input.nextByte();
             secondTeamScore += input.nextByte();
         }
-        if (firstTeamScore > secondTeamScore) System.out.println(1);
-        else if (firstTeamScore == secondTeamScore) System.out.println("DRAW");
-        else System.out.println(2);
+        System.out.print(firstTeamScore == secondTeamScore ? "DRAW" : (firstTeamScore > secondTeamScore ? 1 : 2));
     }
 }
